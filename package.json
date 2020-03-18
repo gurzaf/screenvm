@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@google/dscc": "^0.3.8",
-    "@google/dscc-scripts": "^1.0.15"
+    "@google/dscc-scripts": "^1.0.15",
+    "serialize-javascript": ">=2.1.1"
   }
 }
