@@ -1,0 +1,24 @@
+{
+  "name": "Maclic Screens Place Visualization",
+  "organization": "Roldanillo Easy",
+  "description": "Visualize the name of the Maclic place currently displayed.",
+  "logoUrl": "https://maclic.co/images/apple-touch-icon.png",
+  "organizationUrl": "https://roldanilloeasy.com",
+  "supportUrl": "https://github.com/gurzaf/screencm/issues",
+  "privacyPolicyUrl": "https://roldanilloeasy.com/privacy-policy/",
+  "termsOfServiceUrl": "https://roldanilloeasy.com/privacy-policy/",
+  "packageUrl": "https://github.com/gurzaf/screenvm#readme",
+  "devMode": "DEVMODE_BOOL",
+  "components": [
+    {
+      "name": "maclicPlace",
+      "description": "Maclic Place Name",
+      "iconUrl": "https://maclic.co/images/apple-touch-icon.png",
+      "resource": {
+        "js": "YOUR_GCS_BUCKET/index.js",
+        "config": "YOUR_GCS_BUCKET/index.json",
+        "css": "YOUR_GCS_BUCKET/index.css"
+      }
+    }
+  ]
+}
