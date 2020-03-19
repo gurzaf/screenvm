@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "id": "value",
+      "label": "Lugar del reporte",
+      "elements": [
+        {
+          "id": "label",
+          "label": "Label to show",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "styleGroup1",
+      "label": "Font style",
+      "elements": [
+        {
+          "id": "textFontSize",
+          "label": "Font size",
+          "defaultValue": "10",
+          "type": "FONT_SIZE"
+        },
+        {
+          "id": "fontColor",
+          "label": "Font color",
+          "defaultValue": {
+            "color": "#000000"
+          },
+          "type": "FONT_COLOR"
+        },
+        {
+          "id": "fontFamily",
+          "label": "Font family",
+          "defaultValue": "auto",
+          "type": "FONT_FAMILY"
+        }
+      ]
+    }    
+  ]
+}

@@ -9,7 +9,7 @@ const plugins = [];
 
 let body = '<script src="main.js"></script>';
 if (fs.existsSync(cssFilePath)) {
-  body = body + '\n<link rel="stylesheet" href="index.css">';
+  body = body + '\n<link rel="stylesheet" href="viz.css">';
   plugins.push(new CopyWebpackPlugin([{from: cssFilePath, to: '.'}]));
 }
 const iframeHTML = `
@@ -24,7 +24,7 @@ fs.writeFileSync(path.resolve(__dirname, 'dist', 'vizframe.html'), iframeHTML);
 module.exports = [
   {
     mode: 'development',
-    entry: './src/index.js',
+    entry: './src/viz.js',
     devServer: {
       contentBase: './dist',
     },

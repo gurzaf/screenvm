@@ -1,10 +1,10 @@
 {
   "dsccViz": {
-    "gcsDevBucket": "gs://maclic/viz-dev/",
-    "gcsProdBucket": "gs://maclic/viz/",
-    "jsFile": "index.js",
-    "jsonFile": "index.json",
-    "cssFile": "index.css",
+    "gcsDevBucket": "gs://maclic/viz-dev",
+    "gcsProdBucket": "gs://maclic/viz",
+    "jsFile": "viz.js",
+    "jsonFile": "viz.json",
+    "cssFile": "viz.css",
     "print": "printMessage.js"
   },
   "scripts": {
@@ -16,7 +16,7 @@
     "start": "dscc-scripts viz start"
   },
   "devDependencies": {
-    "@google/dscc": "^0.3.8",
+    "@google/dscc": "^0.3.15",
     "@google/dscc-scripts": "^1.0.15",
     "serialize-javascript": ">=2.1.1"
   }
