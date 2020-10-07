@@ -9,6 +9,7 @@ import { showMessage } from './screenvm';
 export const LOCAL = false;
 
 const drawViz = (data) => {
+  // console.log('VIZ...');
   showMessage(data);
 };
 

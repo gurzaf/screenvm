@@ -1,8 +1,8 @@
-const getElement = (id, type) => {
-  let element = document.getElementById(id);
+const getElement = (type) => {
+  let element = document.querySelector(type);
   if (!element) {
     element = document.createElement(type);
-    element.id = id;
+    // element.id = id;
     document.body.appendChild(element);
   }
   return element;
@@ -30,16 +30,18 @@ const getStyles = (data) => {
   if (fontFamily === 'auto') {
     fontFamily = data.theme.themeFontColor.color;
   }
-  return `font-family: "${fontFamily}"; color: ${fontColor}; font-size: ${fontSize}px;`;
+  return `font-family: "${fontFamily}", Helvetica, sans-serif; color: ${fontColor}; font-size: ${fontSize}px;`;
 };
 
 const showMessage = (data) => {
   const value = getValue(data);
   const styles = getStyles(data);
   const MESSAGE_ID = 'message';
-  const messageElement = getElement(MESSAGE_ID, 'p');
+  const messageElement = getElement('p');
+  console.warn(messageElement);
   messageElement.setAttribute('style', styles);
   messageElement.innerText = value;
+  console.warn(value);
 };
 
 export {
